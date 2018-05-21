@@ -46,10 +46,11 @@ void merge(int *A, int n, int m) {
     for(int k = 0; k < n; k++) {
         A[k] = B[k];
     }
+    free(B);
 }
 
 void merge_sort(int *array, int length) {
-    if(length <= 1) {
+    if(length <= 1) {  
         return;
     }
     else {
