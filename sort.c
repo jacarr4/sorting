@@ -1,9 +1,5 @@
 #include "sort.h"
 
-
-
-
-
 void bubble_sort(int *array, int length) {
     
     int temp;
@@ -18,10 +14,6 @@ void bubble_sort(int *array, int length) {
         }
     }
 }
-
-
-
-
 
 void merge(int *A, int n, int m) {
     int i = 0;
@@ -63,8 +55,7 @@ void merge_sort(int *array, int length) {
 
 
 
-
-
+/* This function is for debugging purposes. */
 void print_array(int *array, int n) {
     printf("\n");
     for(int i = 0; i < n; i++) {
