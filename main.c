@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "io.h"
 #include "sort.h"
 
@@ -7,7 +8,7 @@ int main(int argc, char *argv[]) {
         printf("Usage: ./main <input>.txt <output>.txt <sorting algorithm>\n");
         printf("Sorting algorithms: 0 - Bubble Sort\n");
         printf("                    1 - Merge Sort\n");
-        return -1;
+        exit(-1);
     }
     char *input_filename = argv[1];
     char *output_filename = argv[2];
